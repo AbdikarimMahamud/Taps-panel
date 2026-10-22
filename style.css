@@ -1,0 +1,45 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Segoe Ui',sans-serif,Arial;
+    color:#0f2a43 ;
+    background:  #eef3f8;
+}
+.wrap{
+    max-width: 550px;
+    padding: 0 20px;
+    margin: 40px auto;
+}
+.tabs{
+    display: flex;
+    gap: 8px;
+}
+.tab{
+cursor: pointer;
+border-radius: 10px 10px 0 0;
+padding: 10px 20px;
+border: none;
+color: #0f2a43;
+background:#d6e3ee;
+font-weight: 600;
+
+}
+.tab.active{
+    color: #fff;
+    background: 2bb3a3;
+}
+.panel{
+    display: none;
+    background:#fff ;
+    padding: 24px;
+    border-radius: 0 12px 12px 12px;
+   
+}
+.panel.active{
+    display: block;
+}
